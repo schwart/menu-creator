@@ -215,16 +215,7 @@ function createMenu() {
   let canvasObj = createCanvas();
   let canvas = canvasObj.canvas;
   let context = canvasObj.context;
-  // let menuDetails = getFormData();
-  let menuDetails = {
-    menu_title: "Conall's Gorgeous Menu",
-    starter_title: "Kimchi Gyoza with Bao on the side",
-    starter_description: "Some steamed kimchi gyoza, served with mirin and soy sauce. Streamed bao on the side. dashjdas hkjasdhjkdsa hjkasdhjkadshjkdas hjkadsjkhdas.",
-    main_title: "Sweet Potato Katsu Curry",
-    main_description: "Sweet Potato slices, breaded and fried on top of a dome of rice with some katsu sauce.",
-    dessert_title: "Cheese and Stuff",
-    dessert_description: "Lots of cheese, crackers, grapes, wine. That sort of thing.",
-  }
+  let menuDetails = getFormData();
 
   drawMenu(context, menuDetails);
   // downloadImage(canvas, menuDetails.menu_title);
